@@ -13,7 +13,7 @@ function NavBarMobile() {
 		if (isNavOpen) {
 			return (
 				<div>
-					<span onClick={() => Router.push('/Home')}>Work</span>
+					<span onClick={() => Router.push('/index')}>Work</span>
 				</div>
 			);
 		};

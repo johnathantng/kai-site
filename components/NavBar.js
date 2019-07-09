@@ -1,19 +1,20 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-import { isMobile } from '../utils/isMobile';
+import NavBarDesktop from './NavBarDesktop';
+import NavBarMobile from './NavBarMobile';
+
+import { isMobile } from './utils/isMobile';
 
 function NavBar() {
 	const [navbar, setNavBar] = useState(null);
 
-/**
 	useEffect(() => {
 		if (isMobile()) {
-      setNavBar(<NavbarMobile />);
+      setNavBar(<NavBarMobile />);
     } else {
-      setNavBar(<NavbarDesktop />);
+      setNavBar(<NavBarDesktop />);
     }
 	});
-*/
 
 	return (
 		<div id="navbar">

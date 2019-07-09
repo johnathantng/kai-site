@@ -15,7 +15,6 @@ import '../sass/index.scss';
 function App() {
   return (
   	<div>
-  		Ready for development
   		<NavBar />
   	</div>
   );

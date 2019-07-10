@@ -1,5 +1,8 @@
 {
-  "name": "create-next-example-app",
+  "name": "kai-cao",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "johnathan-tng",
   "scripts": {
     "dev": "next",
     "build": "next build",

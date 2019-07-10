@@ -4,6 +4,7 @@ import Router from 'next/router';
 function NavBarMobile(props) {
 	const page = props.page;
 	const [isNavOpen, setNavOpen] = useState(false);
+	const [slide, setSlide] = useState('slide-out')
 	const [workSelected, setWorkSelected] = useState('');
 	const [aboutSelected, setAboutSelected] = useState('');
 	const [contactSelected, setContactSelected] = useState('');
@@ -19,15 +20,28 @@ function NavBarMobile(props) {
 		}
 	}, []);
 
+	const handleSlide = () => {
+		if (slide == 'slide-in') {
+			console.log('test')
+		  setSlide('slide-out')
+		} else {
+			console.log('testing')
+			setSlide('slide-in')
+		}
+	}
+
 	const	toggleNavOpen = () => {
-		setNavOpen(!isNavOpen);
-		console.log(isNavOpen);
+
+		setNavOpen(true);
+
+		handleSlide();
+
 	};
 
 	const handleNavBar = () => {
 		if (isNavOpen) {
 			return (
-				<div className="nav-container">
+				<div id ="nav" className={`nav-container ${slide}`}>
 					<div className={`nav-item ${workSelected}`}>
 						<span onClick={() => Router.push('/index')}>work</span>
 					</div>
@@ -45,7 +59,9 @@ function NavBarMobile(props) {
 	return (
 		<div>
 			<div className="header" onClick={toggleNavOpen}>Kai</div>
+			<div>
 			{handleNavBar()}
+			</div>
 		</div>
 	);
 };

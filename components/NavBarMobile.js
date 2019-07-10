@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import Router from 'next/router';
 
+import Menu from '../static/icons/menu.png';
+
 function NavBarMobile(props) {
 	const page = props.page;
 	const [isNavOpen, setNavOpen] = useState(false);
@@ -12,23 +14,21 @@ function NavBarMobile(props) {
 	useEffect(() => {
 		switch(page) {
 			case 'about':
-				return (setAboutSelected('selected'))
+				return (setAboutSelected('selected'));
 			case 'contact':
-				return (setContactSelected('selected'))
+				return (setContactSelected('selected'));
 			default:
-				return (setWorkSelected('selected'))
+				return (setWorkSelected('selected'));
 		}
 	}, []);
 
 	const handleSlide = () => {
-		if (slide == 'slide-in') {
-			console.log('test')
-		  setSlide('slide-out')
+		if (slide == "slide-in") {
+		  setSlide("slide-out");
 		} else {
-			console.log('testing')
-			setSlide('slide-in')
-		}
-	}
+			setSlide("slide-in");
+		};
+	};
 
 	const	toggleNavOpen = () => {
 
@@ -41,14 +41,14 @@ function NavBarMobile(props) {
 	const handleNavBar = () => {
 		if (isNavOpen) {
 			return (
-				<div id ="nav" className={`nav-container ${slide}`}>
-					<div className={`nav-item ${workSelected}`}>
+				<div className={`nav-mobile-container ${slide}`}>
+					<div className={`nav-mobile-item ${workSelected}`}>
 						<span onClick={() => Router.push('/index')}>work</span>
 					</div>
-					<div className={`nav-item ${aboutSelected}`}>
+					<div className={`nav-mobile-item ${aboutSelected}`}>
 						<span onClick={() => Router.push('/about')}>about me</span>
 					</div>
-					<div className={`nav-item ${contactSelected}`}>
+					<div className={`nav-mobile-item ${contactSelected}`}>
 						<span onClick={() => Router.push('/contact')}>contact</span>
 					</div>
 				</div>
@@ -58,7 +58,10 @@ function NavBarMobile(props) {
 
 	return (
 		<div>
-			<div className="header" onClick={toggleNavOpen}>Kai</div>
+			<div className="mobile-header">
+				<span onClick={() => Router.push('/index')}>Kai</span>
+				<img className="nav-mobile-menu" src={Menu} onClick={toggleNavOpen}/>
+			</div>
 			<div>
 			{handleNavBar()}
 			</div>

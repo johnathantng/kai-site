@@ -4,9 +4,13 @@
 'base/_typography';
 
 @import
-'components/_About',
-'components/_Contact',
-'components/_Home',
 'components/_NavBar',
+'components/_NavBarDesktop',
+'components/_NavBarMobile',
 'components/_Card',
 'components/_Slide';
+
+@import
+'pages/_about',
+'pages/_contact',
+'pages/_index';

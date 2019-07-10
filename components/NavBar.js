@@ -5,14 +5,15 @@ import NavBarMobile from './NavBarMobile';
 
 import { isMobile } from './utils/isMobile';
 
-function NavBar() {
+function NavBar(props) {
+	const page = props.page;
 	const [navbar, setNavBar] = useState(null);
 
 	useEffect(() => {
 		if (isMobile()) {
-      setNavBar(<NavBarMobile />);
+      setNavBar(<NavBarMobile page={page}/>);
     } else {
-      setNavBar(<NavBarDesktop />);
+      setNavBar(<NavBarDesktop page={page}/>);
     }
 	});
 

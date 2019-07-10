@@ -1,8 +1,23 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Router from 'next/router';
 
-function NavBarMobile() {
+function NavBarMobile(props) {
+	const page = props.page;
 	const [isNavOpen, setNavOpen] = useState(false);
+	const [workSelected, setWorkSelected] = useState('');
+	const [aboutSelected, setAboutSelected] = useState('');
+	const [contactSelected, setContactSelected] = useState('');
+
+	useEffect(() => {
+		switch(page) {
+			case 'about':
+				return (setAboutSelected('selected'))
+			case 'contact':
+				return (setContactSelected('selected'))
+			default:
+				return (setWorkSelected('selected'))
+		}
+	}, []);
 
 	const	toggleNavOpen = () => {
 		setNavOpen(!isNavOpen);
@@ -12,14 +27,14 @@ function NavBarMobile() {
 	const handleNavBar = () => {
 		if (isNavOpen) {
 			return (
-				<div>
-					<div>
+				<div className="nav-container">
+					<div className={`nav-item ${workSelected}`}>
 						<span onClick={() => Router.push('/index')}>work</span>
 					</div>
-					<div>
+					<div className={`nav-item ${aboutSelected}`}>
 						<span onClick={() => Router.push('/about')}>about me</span>
 					</div>
-					<div>
+					<div className={`nav-item ${contactSelected}`}>
 						<span onClick={() => Router.push('/contact')}>contact</span>
 					</div>
 				</div>

@@ -15,7 +15,7 @@ import '../sass/index.scss';
 function App() {
   return (
   	<div>
-  		<NavBar />
+  		<NavBar page="work"/>
   	</div>
   );
 }

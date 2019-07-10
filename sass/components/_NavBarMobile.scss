@@ -1,0 +1,24 @@
+.header {
+	font-family: "Bold";
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: $black;
+}
+
+.nav-container {
+	display: flex;
+	flex-direction: column;
+	.nav-item {
+		width: 100%;
+		margin-top: 10px;
+		font-family: "Light";
+		font-size: 14px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	.selected {
+			background: $black;
+			color: $white;
+	}
+}

@@ -9,6 +9,7 @@ how to use Router
 
 // import Component from '../components/Component';
 import NavBar from '../components/NavBar';
+import CardList from '../components/CardList';
 
 import '../sass/index.scss';
 
@@ -16,6 +17,7 @@ function App() {
   return (
   	<div>
   		<NavBar page="work"/>
+  		<CardList />
   	</div>
   );
 }

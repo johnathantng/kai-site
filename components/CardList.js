@@ -1,6 +1,9 @@
+import Card from './Card';
 function CardList() {
 	return (
-		<div>I will display the cards in a list</div>
+		<div className="card-list">
+			<Card />
+		</div>
 	);
 };
 

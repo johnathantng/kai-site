@@ -1,7 +1,9 @@
+import { useState, useEffect } from 'react';
+
 import CardMobile from './CardMobile';
 import CardDesktop from './CardDesktop';
 
-import { isMobile } from '../utils/isMobile';
+import { isMobile } from './utils/isMobile';
 
 function Card() {
 	const [card, setCard] = useState(null);
@@ -19,7 +21,7 @@ function Card() {
 
     return () => window.removeEventListener("resize", handleResize);
 	}, [width]);
-	
+
 	return (
 		<div>
 			{card}

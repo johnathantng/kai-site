@@ -7,7 +7,7 @@ import { isMobile } from './utils/isMobile';
 
 function NavBar(props) {
 	const { page } = props;
-	
+
 	const [navbar, setNavBar] = useState(null);
 	const [width, setWidth] = useState(null);
 

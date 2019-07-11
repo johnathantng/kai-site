@@ -15,8 +15,6 @@ function NavBarMobile(props) {
 		switch(page) {
 			case 'about':
 				return (setAboutSelected('selected'));
-			case 'contact':
-				return (setContactSelected('selected'));
 			default:
 				return (setWorkSelected('selected'));
 		}
@@ -47,9 +45,6 @@ function NavBarMobile(props) {
 					</div>
 					<div className={`nav-mobile-item ${aboutSelected}`}>
 						<span onClick={() => Router.push('/about')}>about me</span>
-					</div>
-					<div className={`nav-mobile-item ${contactSelected}`}>
-						<span onClick={() => Router.push('/contact')}>contact</span>
 					</div>
 				</div>
 			);

@@ -57,10 +57,10 @@ function NavBarMobile(props) {
 	};
 
 	return (
-		<div>
+		<div className="navbar-mobile">
 			<div className="mobile-header">
 				<span onClick={() => Router.push('/index')}>Kai</span>
-				<img className="nav-mobile-menu" src={Menu} onClick={toggleNavOpen}/>
+				<img className="nav-mobile-menu" alt="menu" src={Menu} onClick={toggleNavOpen}/>
 			</div>
 			<div>
 			{handleNavBar()}

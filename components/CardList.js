@@ -3,6 +3,12 @@ function CardList() {
 	return (
 		<div className="card-list">
 			<Card />
+			<Card />
+			<Card />
+			<Card />
+			<Card />
+			<Card />
+			<Card />
 		</div>
 	);
 };

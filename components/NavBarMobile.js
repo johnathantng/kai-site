@@ -9,7 +9,6 @@ function NavBarMobile(props) {
 	const [slide, setSlide] = useState('slide-out')
 	const [workSelected, setWorkSelected] = useState('');
 	const [aboutSelected, setAboutSelected] = useState('');
-	const [contactSelected, setContactSelected] = useState('');
 
 	useEffect(() => {
 		switch(page) {

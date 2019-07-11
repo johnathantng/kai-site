@@ -1,6 +1,9 @@
-function CardMobile() {
+function CardMobile(props) {
+	const { thumb, desc } = props;
 	return (
-		<div>I am a card for mobile</div>
+		<div className="card-mobile-container">
+			<img src={thumb} alt={desc} />
+		</div>
 	);
 };
 

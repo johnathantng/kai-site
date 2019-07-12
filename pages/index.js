@@ -3,6 +3,7 @@ import { withRouter } from 'next/router';
 
 import NavBar from '../components/NavBar';
 import CardList from '../components/CardList';
+import Footer from '../components/Footer';
 
 import '../sass/index.scss';
 
@@ -11,6 +12,7 @@ function App() {
   	<div>
   		<NavBar page="work"/>
   		<CardList />
+  		<Footer />
   	</div>
   );
 }

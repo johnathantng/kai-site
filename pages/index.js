@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { withRouter } from 'next/router';
 
-import Slide from '../components/Slide';
 import NavBar from '../components/NavBar';
 import CardList from '../components/CardList';
 

@@ -1,6 +1,9 @@
-function Slide() {
+function Slide(props) {
+	const { pres } = props;
 	return (
-		<div>Slide</div>
+		<div className="slide-container">
+			<img className="presentation-image" src={pres} />
+		</div>
 	);
 }
 

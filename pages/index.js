@@ -11,8 +11,8 @@ function App() {
   return (
   	<div>
   		<NavBar page="work"/>
-  		<CardList />
   		<Footer />
+  		<CardList />
   	</div>
   );
 }

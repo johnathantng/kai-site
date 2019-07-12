@@ -1,6 +1,6 @@
-import behLogo from '../static/icons/behance-logo.png';
-import emailIcon from '../static/icons/e-mail-envelope.png';
-import linLogo from '../static/icons/linkedin-logo.png';
+import behLogo from '../static/icons/behance-logo.svg';
+import emailIcon from '../static/icons/email.svg';
+import linLogo from '../static/icons/linkedin-logo.svg';
 
 function Footer() {
 	return (

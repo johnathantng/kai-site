@@ -57,7 +57,7 @@ function NavBarMobile(props) {
 				<img className="nav-mobile-menu" alt="menu" src={Menu} onClick={toggleNavOpen}/>
 			</div>
 			<div>
-			{handleNavBar()}
+				{handleNavBar()}
 			</div>
 		</div>
 	);

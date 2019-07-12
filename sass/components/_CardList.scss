@@ -6,3 +6,20 @@
 		margin-bottom: 0px;
 	}
 }
+
+.project {
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: $white;
+	.close-icon {
+		height: 30px;
+		width: 30px;
+		position: absolute;
+		right: 0;
+		margin-right: 5px;
+		margin-top: 10px; 
+		z-index: 1;
+	}
+}

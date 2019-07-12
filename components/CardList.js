@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Card from './Card';
 import Slide from './Slide';
 
+import winClose from '../static/icons/window-close.png';
 import gliThumb from '../static/images/glide-thumbnail.png';
 import gliPres from '../static/images/glide-presentation.jpg';
 import lunThumb from '../static/images/lune-thumbnail.png';
@@ -21,11 +22,38 @@ function CardList() {
 	const handleRenderSlide = () => {
 		switch (project) {
 			case "glide":
-				return <Slide pres={gliPres} />;
+				return (
+					<div className="project">
+						<img 
+							className="close-icon" 
+							src={winClose} alt="window-close-icon" 
+							onClick={() => onProjectClick("")} 
+						/>
+						<Slide pres={gliPres} />
+					</div>
+				);
 			case "lune":
-				return <Slide pres={lunPres} />
+				return (
+					<div className="project">
+						<img 
+							className="close-icon" 
+							src={winClose} alt="window-close-icon" 
+							onClick={() => onProjectClick("")} 
+						/>
+						<Slide pres={lunPres} />
+					</div>
+				);
 			case "kai":
-				return <Slide pres={kaiPres} />
+				return (
+					<div className="project">
+						<img 
+							className="close-icon" 
+							src={winClose} alt="window-close-icon" 
+							onClick={() => onProjectClick("")} 
+						/>
+						<Slide pres={kaiPres} />
+					</div>
+				);
 			default:
 				return;
 		}	

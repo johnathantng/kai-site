@@ -17,7 +17,6 @@ import picThumb from '../static/images/pickapath-thumbnail.png';
 
 function CardList() {
 	const [project, setProject] = useState('');
-	console.log(project)
 
 	const handleRenderSlide = () => {
 		switch (project) {
@@ -55,7 +54,31 @@ function CardList() {
 					</div>
 				);
 			default:
-				return;
+				return (
+					<div className="card-list">
+						<div className="card-wrapper" onClick={() => onProjectClick("glide")}>
+							<Card thumb={gliThumb} desc="glide-thumbnail" />
+						</div>
+						<div className="card-wrapper" onClick={() => onProjectClick("lune")}>
+							<Card thumb={lunThumb} desc="lune-thumbnail" />
+						</div>
+						<div className="card-wrapper">
+							<Card thumb={rebThumb} desc="rebrand-id-thumbnail" />
+						</div>
+						<div className="card-wrapper" onClick={() => onProjectClick("kai")}>
+							<Card thumb={kaiThumb} desc="kai-thumbnail" />
+						</div>
+						<div className="card-wrapper">
+							<Card thumb={yelThumb} desc="yelort-thumbnail" />
+						</div>
+						<div className="card-wrapper">
+							<Card thumb={cosThumb} desc="cosmetics-thumbnail" />
+						</div>
+						<div className="card-wrapper">
+							<Card thumb={picThumb} desc="pickapath-thumbnail" />
+						</div>
+					</div>
+				);
 		}	
 	}
 
@@ -66,29 +89,6 @@ function CardList() {
 	return (
 		<div>
 			{handleRenderSlide()}
-			<div className="card-list">
-				<div className="card-wrapper" onClick={() => onProjectClick("glide")}>
-					<Card thumb={gliThumb} desc="glide-thumbnail" />
-				</div>
-				<div className="card-wrapper" onClick={() => onProjectClick("lune")}>
-					<Card thumb={lunThumb} desc="lune-thumbnail" />
-				</div>
-				<div className="card-wrapper">
-					<Card thumb={rebThumb} desc="rebrand-id-thumbnail" />
-				</div>
-				<div className="card-wrapper" onClick={() => onProjectClick("kai")}>
-					<Card thumb={kaiThumb} desc="kai-thumbnail" />
-				</div>
-				<div className="card-wrapper">
-					<Card thumb={yelThumb} desc="yelort-thumbnail" />
-				</div>
-				<div className="card-wrapper">
-					<Card thumb={cosThumb} desc="cosmetics-thumbnail" />
-				</div>
-				<div className="card-wrapper">
-					<Card thumb={picThumb} desc="pickapath-thumbnail" />
-				</div>
-			</div>
 		</div>
 	);
 };

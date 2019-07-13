@@ -1,6 +1,10 @@
 .card-list {
 	margin-top: 75px;
 	margin-bottom: 75px;
+	@media screen and (min-width: 860px) {
+		display: grid;
+		grid-template-columns: 50% 50%;
+	}
 	.card-wrapper {
 		margin: 10px;
 		margin-bottom: 0px;

@@ -18,7 +18,7 @@ function Card(props) {
 		if (isMobile()) {
       setCard(<CardMobile thumb={thumb} desc={desc}/>);
     } else {
-      setCard(<CardDesktop />);
+      setCard(<CardDesktop thumb={thumb} desc={desc} />);
     }
 
     return () => window.removeEventListener("resize", handleResize);

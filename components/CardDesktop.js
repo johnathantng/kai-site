@@ -1,6 +1,10 @@
-function CardDesktop() {
+function CardDesktop(props) {
+	const { thumb, desc } = props;
+	
 	return (
-		<div>I am a card for desktop</div>
+		<div className="card-desktop-container">
+			<img src={thumb} alt={desc} />
+		</div>
 	);
 };
 

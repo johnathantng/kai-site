@@ -1,0 +1,18 @@
+.about-container {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	p:first-child {
+		font-family: "Bold";
+		font-size: 18px;
+		margin-right: 0px;
+	}
+	p {
+		text-align: right;
+		font-family: "Light";
+		margin: 10px;
+		color: $black;
+	}
+}

@@ -8,7 +8,7 @@ function Footer() {
 			<a target="_blank" href="https://www.behance.net/kaicao">
 				<img src={behLogo} alt="behance-logo" />
 			</a>
-			<a href="mailto:test">
+			<a href="mailto:kcao@risd.edu">
 				<img src={emailIcon} alt="contact-email-icon" />
 			</a>
 			<a target="_blank" href="https://www.linkedin.com/in/kaic/">

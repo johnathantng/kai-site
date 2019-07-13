@@ -12,6 +12,10 @@ function NavBarDesktop(props) {
 		switch(page) {
 			case 'about':
 				return (setAboutSelected('selected'));
+			case 'skills':
+				return (setSkillsSelected('selected'));
+			case 'contact':
+				return (setSkillsSelected('selected'));
 			default:
 				return (setWorkSelected('selected'));
 		}

@@ -15,7 +15,8 @@ function About() {
   		<div className="about-container">
   			<img alt="kai-portfolio-self" />
   			<p>
-  				<p>Nice to meet you!</p>
+  				<span>Nice to meet you!</span>
+          <br /><br />
 	  			Hi, I'm Kai.
 	  			I am a Rhode Island School of Design graduate with a 
 	  			passion for UI/UX design and branding identities.

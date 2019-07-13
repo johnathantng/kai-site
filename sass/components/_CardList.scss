@@ -4,7 +4,9 @@
 	@media screen and (min-width: 860px) {
 		display: grid;
 		grid-template-columns: 50% 50%;
-		margin-top: 0px;
+		margin-top: 0;
+		margin-right: 75px;
+		margin-left: 85px;
 	}
 	.card-wrapper {
 		margin: 10px;

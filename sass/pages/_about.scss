@@ -4,6 +4,8 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
 	span {
 		font-family: "Bold";
 		font-size: 18px;
@@ -14,6 +16,16 @@
 		font-family: "Light";
 		margin: 10px;
 		color: $black;
+	}
+	.skills-container {
+		display: grid;
+		grid-template-columns: 10% 10% 10%;
+		grid-gap: 10px;
+		justify-content: center;
+		margin-top: 10px;
+		.skills-item {
+			width: 100%;
+		}
 	}
 }
 

@@ -5,15 +5,12 @@ function NavBarDesktop(props) {
 	const { page } = props;
 	const [workSelected, setWorkSelected] = useState('');
 	const [aboutSelected, setAboutSelected] = useState('');
-	const [skillsSelected, setSkillsSelected] = useState('');
 	const [contactSelected, setContactSelected] = useState('');
 
 	useEffect(() => {
 		switch(page) {
 			case 'about':
 				return (setAboutSelected('selected'));
-			case 'skills':
-				return (setSkillsSelected('selected'));
 			case 'contact':
 				return (setSkillsSelected('selected'));
 			default:
@@ -30,9 +27,6 @@ function NavBarDesktop(props) {
 				</div>
 				<div className={`nav-desktop-item ${aboutSelected}`}>
 					<span onClick={() => Router.push('/about')}>about me</span>
-				</div>
-				<div className={`nav-desktop-item ${skillsSelected}`}>
-					<span onClick={() => Router.push('/skills')}>skills</span>
 				</div>
 				<div className={`nav-desktop-item ${contactSelected}`}>
 					<span onClick={() => Router.push('/contact')}>contact</span>

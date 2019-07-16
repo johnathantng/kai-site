@@ -1,0 +1,75 @@
+.navbar-mobile {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	background: white;
+	box-shadow: 0 4px 2px -2px rgba(0,0,0,0.25);
+	.mobile-header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		font-family: "SemiBold";
+		font-size: 25px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		color: $black;
+		.nav-mobile-menu {
+			height: 25px;
+			width: 25px;
+		}
+	}
+
+	.nav-mobile-container {
+		display: flex;
+		flex-direction: column;
+		background: white;
+		.nav-mobile-item {
+			width: 100%;
+			margin-top: 10px;
+			font-family: "Light";
+			font-size: 14px;
+			text-transform: uppercase;
+			text-align: center;
+		}
+		.selected {
+				background: $black;
+				color: $white;
+		}
+	}
+
+	.slide-in {
+	  position: absolute;
+	  right: -100%;
+	  width: 100%;
+	  height: 100vh;
+	  -webkit-animation: slide-in 0.5s forwards;
+	  animation: slide-in 0.5s forwards;
+		@-webkit-keyframes slide-in {
+	  	100% { right: 0; }
+		}
+		@keyframes slide-in {
+	    100% { right: 0; }
+		}
+	}
+
+	.slide-out {
+	  position: absolute;
+	  right: -100%;
+	  width: 100%;
+	  height: 100vh;
+	  -webkit-animation: slide-out 0.5s forwards;
+	  animation: slide-out 0.5s forwards;
+		@-webkit-keyframes slide-out {
+	  	0% { right: 0; }
+		}
+		@keyframes slide-out {
+	    0% { right: 0; }
+		}
+	}
+}

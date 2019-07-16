@@ -11,8 +11,6 @@ function NavBarDesktop(props) {
 		switch(page) {
 			case 'about':
 				return (setAboutSelected('selected'));
-			case 'contact':
-				return (setSkillsSelected('selected'));
 			default:
 				return (setWorkSelected('selected'));
 		}
@@ -27,9 +25,6 @@ function NavBarDesktop(props) {
 				</div>
 				<div className={`nav-desktop-item ${aboutSelected}`}>
 					<span onClick={() => Router.push('/about')}>about me</span>
-				</div>
-				<div className={`nav-desktop-item ${contactSelected}`}>
-					<span onClick={() => Router.push('/contact')}>contact</span>
 				</div>
 			</div>
 		</div>

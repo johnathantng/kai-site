@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { withRouter } from 'next/router';
+import Head from 'next/head';
 
 import NavBar from '../components/NavBar';
 import CardList from '../components/CardList';
@@ -21,6 +22,10 @@ import Solidworks from '../static/icons/sw.png';
 function About() {
   return (
   	<div>
+      <Head>
+        <title>Kai Cao</title>
+        <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico" />
+      </Head>
   		<NavBar page="about"/>
   		<Footer />
   		<div className="about-container">

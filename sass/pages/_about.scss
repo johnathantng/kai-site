@@ -1,6 +1,6 @@
 .about-container {
 	height: 95vh;
-	margin: 75px 10px 0px;
+	margin: 75px 10px;
 	.about-top-half {
 		display: flex;
 		flex-direction: column;
@@ -88,7 +88,7 @@
 					justify-content: center;
 					.skills-item {
 						margin-left: 8px;
-						width: 4%;
+						width: 62px;
 					}
 				}
 			}

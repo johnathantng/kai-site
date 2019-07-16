@@ -1,0 +1,52 @@
+$custom-font-path : '/static/fonts';
+
+// Open Sans Pro
+@font-face {
+	font-family: "Bold";
+	src: url($custom-font-path + "/OpenSans-Bold.ttf");
+}
+
+@font-face {
+	font-family: "BoldItalic";
+	src: url($custom-font-path + "/OpenSans-BoldItalic.ttf");
+}
+
+@font-face {
+	font-family: "ExtraBold";
+	src: url($custom-font-path + "/OpenSans-ExtraBold.ttf");
+}
+
+@font-face {
+	font-family: "ExtraBoldItalic";
+	src: url($custom-font-path + "/OpenSans-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+	font-family: "Italic";
+	src: url($custom-font-path + "/OpenSans-Italic.ttf");
+}
+
+@font-face {
+	font-family: "Light";
+	src: url($custom-font-path + "/OpenSans-Light.ttf");
+}
+
+@font-face {
+	font-family: "LightItalic";
+	src: url($custom-font-path + "/OpenSans-LightItalic.ttf");
+}
+
+@font-face {
+	font-family: "Regular";
+	src: url($custom-font-path + "/OpenSans-Regular.ttf");
+}
+
+@font-face {
+	font-family: "SemiBold";
+	src: url($custom-font-path + "/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+	font-family: "SemiBoldItalic";
+	src: url($custom-font-path + "/OpenSans-SemiBoldItalic.ttf");
+}

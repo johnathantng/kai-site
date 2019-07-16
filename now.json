@@ -1,3 +1,9 @@
 {
-	"alias": ["kai-site"],
+  "version": 2,
+  "alias": "my-aliasedkai-site-v1",
+  "name": "kai-site-v1",
+  "builds": [{
+  	"src": "next.config.js",
+  	"use": "@now/next"
+  }]
 }

@@ -1,10 +1,5 @@
-module.exports = {
-  webpack: config => {
-    // Fixes npm packages that depend on `fs` module
-    config.node = {
-      fs: 'empty'
-    }
+const withCSS = require('@zeit/next-css'),
+	withSASS = require('@zeit/next-sass'),
+	withImages = require('next-images');
 
-    return config
-  }
-}
+module.exports = withImages(withCSS(withSASS()));

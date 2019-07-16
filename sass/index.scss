@@ -1,0 +1,19 @@
+// this is where to import .scss files
+@import
+'base/_colors',
+'base/_typography';
+
+@import
+'components/_NavBar',
+'components/_NavBarDesktop',
+'components/_NavBarMobile',
+'components/_Card',
+'components/_CardDesktop',
+'components/_CardMobile',
+'components/_CardList',
+'components/_Slide',
+'components/_Footer';
+
+@import
+'pages/_about',
+'pages/_index';

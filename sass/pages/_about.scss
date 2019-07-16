@@ -44,6 +44,16 @@
 	}
 }
 
+@media screen and (min-width: 720px) {
+	.about-container {
+		.about-top-half {
+			p {
+				font-size: 12px;
+			}
+		}
+	}
+}
+
 @media screen and (min-width: 860px) {
 	.about-container {
 		height: 85vh;
@@ -81,6 +91,16 @@
 						width: 4%;
 					}
 				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.about-container {
+		.about-top-half {
+			p {
+				font-size: 18px;
 			}
 		}
 	}

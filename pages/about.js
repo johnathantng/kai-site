@@ -7,6 +7,8 @@ import Footer from '../components/Footer';
 
 import '../sass/index.scss';
 
+import KaiSelf from '../static/images/kai-selfie-circle.jpg';
+
 import Photoshop from '../static/icons/photoshop.png';
 import Illustrator from '../static/icons/illustrator.png';
 import Xd from '../static/icons/xd.png';
@@ -22,30 +24,36 @@ function About() {
   		<NavBar page="about"/>
   		<Footer />
   		<div className="about-container">
-  			<img alt="kai-portfolio-self" />
-  			<p>
-  				<span>Nice to meet you!</span>
-          <br /><br />
-	  			Hi, I'm Kai.
-	  			I am a Rhode Island School of Design graduate with a 
-	  			passion for UI/UX design and branding identities.
-	  			I love creating experiences for people through innovative design and products.
-	  			<br /><br />
-	  			Throughout the course of my education,
-	  			I have developed an interdisciplinary skillset that allows me to
-	  			design solutions to problems in an effective and empathetic way.
-          <br /><br />
-  			</p>
-        <span className="skills-heading">Skills</span>
-        <div className="skills-container">
-          <img className="skills-item" src={Photoshop} />
-          <img className="skills-item" src={Illustrator} />
-          <img className="skills-item" src={Xd} />
-          <img className="skills-item" src={Sketch} />
-          <img className="skills-item" src={InDesign} />
-          <img className="skills-item" src={Lightroom} />
-          <img className="skills-item" src={Rhino} />
-          <img className="skills-item" src={Solidworks} />
+        <div className="about-top-half">
+  			<img src={KaiSelf} alt="kai-portfolio-self" />
+    			<p className="about-desc">
+    				<span>Nice to meet you!</span>
+            <br /><br />
+  	  			Hi, I'm Kai.
+  	  			I am a Rhode Island School of Design graduate with a 
+  	  			passion for UI/UX design and branding identities.
+  	  			I love creating experiences for people through innovative design and products.
+  	  			<br /><br />
+  	  			Throughout the course of my education,
+  	  			I have developed an interdisciplinary skillset that allows me to
+  	  			design solutions to problems in an effective and empathetic way.
+            <br /><br />
+          </p>
+        </div>
+        <div className="about-bottom-half">
+          <div className="skills-container">
+            <span className="skills-heading">Skills</span>
+            <div className="skills-item-container">
+              <img className="skills-item" src={Photoshop} />
+              <img className="skills-item" src={Illustrator} />
+              <img className="skills-item" src={Xd} />
+              <img className="skills-item" src={Sketch} />
+              <img className="skills-item" src={InDesign} />
+              <img className="skills-item" src={Lightroom} />
+              <img className="skills-item" src={Rhino} />
+              <img className="skills-item" src={Solidworks} />
+            </div>
+          </div>
         </div>
 			</div>
   	</div>

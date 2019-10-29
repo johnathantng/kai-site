@@ -4,16 +4,11 @@
 'base/_typography';
 
 @import
-'components/_NavBar',
+'components/_About',
+'components/_Carousel',
+'components/_Hero',
 'components/_NavBarDesktop',
-'components/_NavBarMobile',
-'components/_Card',
-'components/_CardDesktop',
-'components/_CardMobile',
-'components/_CardList',
-'components/_Slide',
-'components/_Footer';
+'components/_NavBarMobile';
 
 @import
-'pages/_about',
 'pages/_index';

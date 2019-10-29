@@ -3,6 +3,7 @@ import { withRouter } from 'next/router';
 import Head from 'next/head';
 
 import '../sass/index.scss';
+import Landing from '../components/Landing';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         />
   			<link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico" />
   		</Head>
+      <Landing />
   	</div>
   );
 }

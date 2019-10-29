@@ -1,0 +1,54 @@
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: $black;
+    -webkit-animation: fade 0.5s forwards;
+    -webkit-animation-delay: 5s;
+    animation: fade 0.5s forwards;
+    animation-delay: 5s;
+    animation-duration: 1s;
+    opacity: 1;
+
+    .landing-text {
+        position: absolute;
+        right: 0px;
+        width: 250px;
+        height: 100px;
+        color: $white;
+        font-size: 50px;
+        margin-right: 180px;
+        -webkit-animation: slide-right 0.5s forwards;
+        -webkit-animation-delay: 1s;
+        animation: slide-right 0.5s forwards;
+        overflow: hidden;
+        animation-delay: 1s;
+        animation-duration: 1s;
+        opacity: 0;
+    }
+
+    @media screen and (max-width: 920px) {
+        .landing-text {
+            margin-right: 0px;
+        }
+    }
+    
+    @-webkit-keyframes slide-right {
+        100% { right: 50vw; opacity: 1; }
+    }
+    
+    @keyframes slide-right {
+        100% { right: 50vw; opacity: 1; }
+    }
+
+    @-webkit-keyframes fade {
+        100% { opacity: 0; }
+    }
+
+    @keyframes fade {
+        100% { opacity: 0; }
+    }
+}
+

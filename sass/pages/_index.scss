@@ -1,4 +1,8 @@
 // import scss for index
+body {
+	margin: 0;
+	overflow-x: hidden;
+}
 img, span, a {
 	user-select: none;
 }

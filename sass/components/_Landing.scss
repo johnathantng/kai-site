@@ -14,19 +14,29 @@
 
     .landing-text {
         position: absolute;
-        right: 0px;
+        right: 50vw;
+        top: 50vh;
         width: 250px;
         height: 100px;
         color: $white;
         font-size: 50px;
         margin-right: 180px;
-        -webkit-animation: slide-right 0.5s forwards;
+        -webkit-animation: slide-up 0.5s forwards;
         -webkit-animation-delay: 1s;
-        animation: slide-right 0.5s forwards;
+        animation: slide-up 0.5s forwards;
         overflow: hidden;
         animation-delay: 1s;
         animation-duration: 1s;
         opacity: 0;
+
+        .red-dot {
+            color: $white;        
+            -webkit-animation: color-change 0.5s forwards;
+            -webkit-animation-delay: 1s;
+            animation: color-change 0.5s forwards;
+            animation-delay: 2s;
+            animation-duration: 0.5s;
+        }
     }
 
     @media screen and (max-width: 920px) {
@@ -35,12 +45,12 @@
         }
     }
     
-    @-webkit-keyframes slide-right {
-        100% { right: 50vw; opacity: 1; }
+    @-webkit-keyframes slide-up {
+        100% { top: 45vh; opacity: 1; }
     }
     
-    @keyframes slide-right {
-        100% { right: 50vw; opacity: 1; }
+    @keyframes slide-up {
+        100% { top: 45vh; opacity: 1; }
     }
 
     @-webkit-keyframes fade {
@@ -50,5 +60,14 @@
     @keyframes fade {
         100% { opacity: 0; }
     }
+
+    @-webkit-keyframes color-change {
+        100% { color: $red; }
+    }
+    
+    @keyframes color-change {
+        100% { color: $red; }
+    }
+
 }
 

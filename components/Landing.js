@@ -8,7 +8,7 @@ function Landing() {
                 <span className="red-dot">.</span>
             </div>
         </div>
-    )
+    );
 }
 
 export default Landing;

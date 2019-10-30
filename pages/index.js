@@ -3,16 +3,9 @@ import { withRouter } from 'next/router';
 import Head from 'next/head';
 
 import '../sass/index.scss';
-import Landing from '../components/Landing';
-import Hero from '../components/Hero';
-import About from '../components/About';
+import ViewWindow from '../components/ViewWindow';
 
 function App() {
-
-  useEffect(() => {
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [])
 
   return (
   	<div>
@@ -27,9 +20,7 @@ function App() {
         />
   			<link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico" />
   		</Head>
-      <Landing />
-      <Hero />
-      <About />
+      <ViewWindow />
   	</div>
   );
 }

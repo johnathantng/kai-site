@@ -1,11 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { withRouter } from 'next/router';
 import Head from 'next/head';
 
 import '../sass/index.scss';
 import Landing from '../components/Landing';
+import Hero from '../components/Hero';
+import About from '../components/About';
 
 function App() {
+
+  useEffect(() => {
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [])
+
   return (
   	<div>
   		<Head>
@@ -20,6 +28,8 @@ function App() {
   			<link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico" />
   		</Head>
       <Landing />
+      <Hero />
+      <About />
   	</div>
   );
 }

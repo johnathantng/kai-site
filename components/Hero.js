@@ -6,9 +6,11 @@ function Hero() {
         <div className="hero-container">
             <ParallaxComponent
                 top={0}
-                speed="10"
+                speed={1}
             >
-                Hello.
+                <div className="hero-text">
+                    Hello.
+                </div>
             </ParallaxComponent>
         </div>
     );

@@ -7,7 +7,6 @@ function ParallaxComponent(props) {
     const parallaxElement = useRef();
 
     useEffect(() => {
-        console.log(parallaxElement.current.style);    
         setNewStyle({
             speed: props.speed || 1,
     
@@ -64,8 +63,9 @@ function ParallaxComponent(props) {
 
     return (
         <div
-            ref = {parallaxElement}
-            style = {newStyle}
+            className="parallax-container"
+            ref={parallaxElement}
+            style={newStyle}
         >
             {props.children}
         </div>

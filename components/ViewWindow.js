@@ -6,8 +6,7 @@ import About from '../components/About';
 
 function ViewWindow() {
 
-    const [renderLanding, setRenderLanding] = useState(true);  
-    console.log(renderLanding)
+    const [renderLanding, setRenderLanding] = useState(true);
 
     setTimeout(() => setRenderLanding(false), 6000);
     
@@ -18,9 +17,13 @@ function ViewWindow() {
             );
         } else {
             return (
-                <div>
-                    <Hero />
-                    <About />
+                <div className="view-window">
+                    <div className="child">
+                        <Hero />
+                    </div>
+                    <div className="child">
+                        <About />
+                    </div>
                 </div>
             );
         }

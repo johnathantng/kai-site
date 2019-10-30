@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 
 function About() {
     return (
-        <div>
-            About.
+        <div className="about-container">
+            <div className="about-text-container">
+                About.
+            </div>
         </div>
     );
 }

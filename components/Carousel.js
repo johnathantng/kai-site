@@ -41,6 +41,9 @@ function Carousel(props) {
                     {carouselImage}
                 </div>
             <div onClick={() => carouselNext()}>forward</div>
+            <CarouselLegend 
+                count={count}
+            />
         </div>
     );
 }

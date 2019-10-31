@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import ParallaxComponent from './ParallaxComponent';
+import Carousel from './Carousel';
 
 function Hero() {
     return (
@@ -10,7 +11,7 @@ function Hero() {
                 speed={0.6}
             >
                 <div className="hero-text">
-                    Hello.
+                    <Carousel />
                 </div>
             </ParallaxComponent>
         </div>

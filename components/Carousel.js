@@ -8,7 +8,7 @@ function Carousel(props) {
     const galleryImages = [
         // props.imageOne,
         // props.imageTwo
-        0,1
+        0,1,2,3,4,5
     ]
 
     const carouselBack = () => {
@@ -21,13 +21,23 @@ function Carousel(props) {
         }
     }
 
+    const carouselNext = () => {
+        if (count >= galleryImages.length - 1) {
+            setCount(0);
+            setCarouselImage(galleryImages[count]);
+        } else {
+            setCount(count + 1);
+            setCarouselImage(galleryImages[count]);
+        }
+    }
+
     return (
         <div className="carousel-container">
             <div onClick={() => carouselBack()}>back</div>
                 <div className="carousel-view">
                     {carouselImage}
                 </div>
-            <span>forward</span>
+            <div onClick={() => carouselNext()}>forward</div>
         </div>
     );
 }

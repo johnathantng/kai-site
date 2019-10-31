@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+
 import ParallaxComponent from './ParallaxComponent';
 
 function Hero() {
@@ -6,7 +7,7 @@ function Hero() {
         <div className="hero-container">
             <ParallaxComponent
                 top={0}
-                speed={1}
+                speed={0.6}
             >
                 <div className="hero-text">
                     Hello.

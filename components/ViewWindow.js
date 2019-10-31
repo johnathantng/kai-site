@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import Landing from '../components/Landing';
 import Hero from '../components/Hero';
 import About from '../components/About';    
+import ParallaxComponent from './ParallaxComponent';
 
 function ViewWindow() {
 
@@ -18,12 +19,16 @@ function ViewWindow() {
         } else {
             return (
                 <div className="view-window">
-                    <div className="child">
+                    <div id="hero">
                         <Hero />
                     </div>
-                    <div className="child">
+                    <ParallaxComponent
+                        top="250%"
+                        speed={1.2}
+                        zIndex={2}
+                    >
                         <About />
-                    </div>
+                    </ParallaxComponent>
                 </div>
             );
         }

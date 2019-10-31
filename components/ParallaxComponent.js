@@ -7,6 +7,7 @@ function ParallaxComponent(props) {
     const parallaxElement = useRef();
 
     useEffect(() => {
+        
         setNewStyle({
             speed: props.speed || 1,
     
@@ -21,7 +22,8 @@ function ParallaxComponent(props) {
             backgroundColor: props.color || null,
     
             backgroundImage: `url(${props.image})`
-        })
+        });
+
         const handleScroll = () => {
             const speed = props.speed;
             const top = props.top;

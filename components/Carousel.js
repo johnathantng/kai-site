@@ -1,33 +1,36 @@
 import React, { useState, useEffect } from 'react';
 
+import CarouselLegend from './CarouselLegend';
+
 function Carousel(props) {
 
     const [count, setCount] = useState(0);
     const [carouselImage, setCarouselImage] = useState(0);
+    console.log(count);
 
     const galleryImages = [
         // props.imageOne,
         // props.imageTwo
-        0,1,2,3,4,5
+        'hello','two','three','four','last'
     ]
 
     const carouselBack = () => {
         if (count == 0) {
             setCount(galleryImages.length - 1);
-            setCarouselImage(galleryImages[count]);
+            setCarouselImage(galleryImages[galleryImages.length - 1]);
         } else {
             setCount(count - 1);
-            setCarouselImage(galleryImages[count]);
+            setCarouselImage(galleryImages[count - 1]);
         }
     }
 
     const carouselNext = () => {
         if (count >= galleryImages.length - 1) {
             setCount(0);
-            setCarouselImage(galleryImages[count]);
+            setCarouselImage(galleryImages[0]);
         } else {
             setCount(count + 1);
-            setCarouselImage(galleryImages[count]);
+            setCarouselImage(galleryImages[count + 1]);
         }
     }
 

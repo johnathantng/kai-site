@@ -40,21 +40,6 @@ function ParallaxComponent(props) {
             console.log("top", top);
             console.log("new top", newTop);
     
-            //throttle function
-            {
-            /* 
-            throttle(fn, wait) {
-                let time = Date.now();
-    
-                return function() {
-                if  ((time + wait -Date.now()) < 0) {
-                    fn()
-                    time = Date.now()
-                }
-                }
-            }
-            */
-        }
       }
 
       window.addEventListener("scroll", handleScroll);

@@ -12,7 +12,7 @@ function Carousel(props) {
 
     useEffect(() => {
         setCarouselLegend(carouselLegendIndex[count]);
-        setFade("fade-in")
+        setFade("fade-in");
         carouselIndexLogic();
     }, [count])
 

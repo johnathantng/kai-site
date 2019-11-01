@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 function Carousel(props) {
 
     const [count, setCount] = useState(0);
+    const [carouselLegend, setCarouselLegend] = useState("lune");
     const [carouselImage, setCarouselImage] = useState(0);
     const [fade, setFade] = useState("");
 
@@ -10,13 +11,13 @@ function Carousel(props) {
     const carouselIndex = useRef();
 
     useEffect(() => {
+        setCarouselLegend(carouselLegendIndex[count]);
         setFade("fade-in")
         carouselIndexLogic();
     }, [count])
 
     const carouselIndexLogic = () => {      
         //logic for index-dot to update as well as images to fade in
-        const currentImage = carouselView.current.querySelectorAll("div");
         const currentIndex = carouselIndex.current.querySelectorAll("span");
         currentIndex.forEach((index) => {
             index.className = index.className.replace(" active", "");
@@ -25,6 +26,10 @@ function Carousel(props) {
         setCarouselImage(galleryImages[count]);
 
     }
+
+    const carouselLegendIndex = [
+        "lune","test","three","next", "final"
+    ]
 
     const galleryImages = [
         // props.imageOne,
@@ -64,8 +69,11 @@ function Carousel(props) {
     return (
         <div className="carousel-container">
             <div onClick={() => carouselBack()}>back</div>
-                <div ref={carouselView} className="carousel-view">            
-                    <div className={`carouselImage ${fade}`}>
+                <div ref={carouselView} className="carousel-view">     
+                    <div className="carousel-legend">
+                        {carouselLegend}
+                    </div>       
+                    <div className={`carousel-image ${fade}`}>
                         {carouselImage}
                     </div>
                 </div>

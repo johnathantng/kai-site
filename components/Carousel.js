@@ -14,6 +14,7 @@ function Carousel(props) {
             index.className = index.className.replace(" active", "");
         })
         currentIndex[count].className += " active";
+        setCarouselImage(galleryImages[count]);
     })
 
     const galleryImages = [

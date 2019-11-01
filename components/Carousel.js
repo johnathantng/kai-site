@@ -1,12 +1,20 @@
-import React, { useState, useEffect } from 'react';
-
-import CarouselLegend from './CarouselLegend';
+import React, { useState, useEffect, useRef } from 'react';
 
 function Carousel(props) {
 
     const [count, setCount] = useState(0);
     const [carouselImage, setCarouselImage] = useState(0);
-    console.log(count);
+
+    const carouselIndex = useRef();
+
+    useEffect(() => {
+        const currentIndex = carouselIndex.current.querySelectorAll("span");
+        currentIndex.forEach((index) => {
+            console.log(index.className);
+            index.className = index.className.replace(" active", "");
+        })
+        currentIndex[count].className += " active";
+    })
 
     const galleryImages = [
         // props.imageOne,
@@ -41,9 +49,13 @@ function Carousel(props) {
                     {carouselImage}
                 </div>
             <div onClick={() => carouselNext()}>forward</div>
-            <CarouselLegend 
-                count={count}
-            />
+            <div ref={carouselIndex} className="carousel-index">
+                <span className="index-dot" onClick={() => setCount(0)}></span>
+                <span className="index-dot" onClick={() => setCount(1)}></span>
+                <span className="index-dot" onClick={() => setCount(2)}></span>
+                <span className="index-dot" onClick={() => setCount(3)}></span>
+                <span className="index-dot" onClick={() => setCount(4)}></span>
+            </div>
         </div>
     );
 }

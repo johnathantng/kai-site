@@ -28,7 +28,7 @@ function Carousel(props) {
     }
 
     const carouselLegendIndex = [
-        "lune","test","three","next", "final"
+        "01. Infyonboard","02. Glide","03. LUNE","04. risd id rebrand", "05. YELORT"
     ]
 
     const galleryImages = [

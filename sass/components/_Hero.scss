@@ -2,10 +2,15 @@
     background: $black;
     height: 100vh;
 
-    .hero-text {
+    .sun-image {
         position: absolute;
-        top: 50%;
-        left: 40%;
-        color: $white;
+        left: 24.689vw;
+        width: 50%;
+    }
+
+    .slide-1 {
+        position: absolute;
+        top: -26vh;
+        width: 100vw;
     }
 }

@@ -10,6 +10,7 @@ import slide3 from '../static/images/parallax-images/kai-slide-3.png';
 import slide4 from '../static/images/parallax-images/kai-slide-4.png';
 import slide5 from '../static/images/parallax-images/kai-slide-5.png';
 import slide6 from '../static/images/parallax-images/kai-slide-6.png';
+import About from './About';
 
 function Hero() {
     return (
@@ -17,7 +18,7 @@ function Hero() {
             <div className="hero-container">
                 <ParallaxComponent
                     top={0}
-                    speed={0.6}
+                    speed={0}
                 >
                     <img 
                         src={sunImage} 
@@ -26,7 +27,7 @@ function Hero() {
                 </ParallaxComponent>
                 <ParallaxComponent
                     top={0}
-                    speed={0.6}
+                    speed={0.4}
                 >
                     <img 
                         src={slide1}
@@ -35,7 +36,7 @@ function Hero() {
                 </ParallaxComponent>
                 <ParallaxComponent
                     top={0}
-                    speed={0.8}
+                    speed={0.6}
                 >
                     <img 
                         src={slide2}
@@ -44,7 +45,7 @@ function Hero() {
                 </ParallaxComponent>
                 <ParallaxComponent
                     top={0}
-                    speed={1}
+                    speed={0.8}
                 >
                     <img 
                         src={slide3}
@@ -53,7 +54,7 @@ function Hero() {
                 </ParallaxComponent>
                 <ParallaxComponent
                     top={0}
-                    speed={1.2}
+                    speed={1.0}
                 >
                     <img 
                         src={slide4}
@@ -62,7 +63,7 @@ function Hero() {
                 </ParallaxComponent>
                 <ParallaxComponent
                     top={0}
-                    speed={1.4}
+                    speed={1.2}
                 >
                     <img 
                         src={slide5}
@@ -71,7 +72,7 @@ function Hero() {
                 </ParallaxComponent>
                 <ParallaxComponent
                     top={0}
-                    speed={1.8}
+                    speed={1.4}
                 >
                     <img 
                         src={slide6}

@@ -68,6 +68,30 @@
             top: 40vh;
         }
     }
+
+    @media (max-width: $tablet) {
+        .sun-image {
+            top: 31vh;
+        }
+        .slide-1 {
+            top: 31vh;
+        }
+        .slide-2 {
+            top: 32vh;
+        }
+        .slide-3 {
+            top: 32vh;
+        }
+        .slide-4 {
+            top: 34vh;
+        }
+        .slide-5 {
+            top: 34vh;
+        }
+        .slide-6 {
+            top: 34vh;
+        }
+    }
 }
 @media (max-width: $mobile) {
     .hero-container {

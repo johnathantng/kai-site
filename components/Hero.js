@@ -26,7 +26,7 @@ function Hero() {
                 </ParallaxComponent>
                 <ParallaxComponent
                     top={0}
-                    speed={1.2}
+                    speed={0.6}
                 >
                     <img 
                         src={slide1}
@@ -44,11 +44,38 @@ function Hero() {
                 </ParallaxComponent>
                 <ParallaxComponent
                     top={0}
-                    speed={0.5}
+                    speed={1}
                 >
                     <img 
                         src={slide3}
                         className="slide-3"
+                    />
+                </ParallaxComponent>
+                <ParallaxComponent
+                    top={0}
+                    speed={1.2}
+                >
+                    <img 
+                        src={slide4}
+                        className="slide-4"
+                    />
+                </ParallaxComponent>
+                <ParallaxComponent
+                    top={0}
+                    speed={1.4}
+                >
+                    <img 
+                        src={slide5}
+                        className="slide-5"
+                    />
+                </ParallaxComponent>
+                <ParallaxComponent
+                    top={0}
+                    speed={1.8}
+                >
+                    <img 
+                        src={slide6}
+                        className="slide-6"
                     />
                 </ParallaxComponent>
             </div>

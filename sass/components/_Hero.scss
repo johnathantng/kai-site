@@ -44,4 +44,33 @@
         top: -24vh;
         width: 100vw;
     }
+
+    @media (max-width: $mobile) {
+        .sun-image {
+            top: 38vh;
+        }
+        .slide-1 {
+            top: 38vh;
+        }
+        .slide-2 {
+            top: 39vh;
+        }
+        .slide-3 {
+            top: 39vh;
+        }
+        .slide-4 {
+            top: 40vh;
+        }
+        .slide-5 {
+            top: 40vh;
+        }
+        .slide-6 {
+            top: 40vh;
+        }
+    }
+}
+@media (max-width: $mobile) {
+    .hero-container {
+        height: 75vh;
+    }
 }

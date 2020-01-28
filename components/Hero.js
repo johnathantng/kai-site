@@ -63,7 +63,7 @@ function Hero() {
                 </ParallaxComponent>
                 <ParallaxComponent
                     top={0}
-                    speed={1.2}
+                    speed={1.1}
                 >
                     <img 
                         src={slide5}
@@ -72,7 +72,7 @@ function Hero() {
                 </ParallaxComponent>
                 <ParallaxComponent
                     top={0}
-                    speed={1.4}
+                    speed={1.2}
                 >
                     <img 
                         src={slide6}

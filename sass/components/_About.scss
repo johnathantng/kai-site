@@ -7,24 +7,47 @@
     .about-text-container {
         display: flex;
         flex-direction: column;
-        width: 25vw;
+        width: 35vw;
         margin-right: 500px;
 
         .about-heading {
             font-family: HYPE;
             color: $red;
+            font-size: 42px;
             margin-bottom: 25px;
         }
 
         .about-text {
             font-family: MrEaves;
             color: $white;
+            font-size: 28px;
+        }
+
+        @media screen and (max-width: $tablet) {
+            .about-heading {
+                font-size: 20px;
+            }
+            
+            .about-text {
+                font-size: 15px;
+            }
+        }
+
+        @media screen and (max-width: $mobile) {
+            .about-heading {
+                font-size: 15px;
+            }
+
+            .about-text {
+                font-size: 12px;
+            }
         }
     }
 
     @media screen and (max-width: $tablet) {
         .about-text-container {
             margin-right: 0;
+            width: 65vw;
         }
     }
 
@@ -32,6 +55,6 @@
 
 @media screen and (max-width: $tablet) {
     .about-container {
-        margin-top: 100px;
+        padding-top: 100px;
     }
 }

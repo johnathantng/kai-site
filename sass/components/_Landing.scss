@@ -17,9 +17,9 @@
 
         .landing-text {
             position: absolute;
-            right: 50vw;
+            right: 40vw;
             top: 50vh;
-            width: 250px;
+            width: 500px;
             height: 100px;
             color: $white;
             font-size: 50px;
@@ -31,6 +31,10 @@
             animation-delay: 1s;
             animation-duration: 1s;
             opacity: 0;
+
+            .welcome-text {    
+                font-family: HYPE;
+            }
 
             .red-dot {
                 color: $white;        

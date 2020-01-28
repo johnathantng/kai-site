@@ -5,7 +5,7 @@ function Landing() {
         <div className="landing-container">
             <div className="landing-text-container">
                 <div className="landing-text slide-right">
-                    <span>Welcome</span>
+                    <span className="welcome-text">WELCOME</span>
                     <span className="red-dot">.</span>
                 </div>
             </div>

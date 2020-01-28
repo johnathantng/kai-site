@@ -1,4 +1,37 @@
 .about-container {
-    background: white;
+    display: flex;
+    justify-content: center;
+    background: $black;
     height: 100vh;
+
+    .about-text-container {
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+        margin-right: 500px;
+
+        .about-heading {
+            font-family: HYPE;
+            color: $red;
+            margin-bottom: 25px;
+        }
+
+        .about-text {
+            font-family: MrEaves;
+            color: $white;
+        }
+    }
+
+    @media screen and (max-width: $tablet) {
+        .about-text-container {
+            margin-right: 0;
+        }
+    }
+
+}
+
+@media screen and (max-width: $tablet) {
+    .about-container {
+        margin-top: 100px;
+    }
 }

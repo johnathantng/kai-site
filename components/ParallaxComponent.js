@@ -37,9 +37,6 @@ function ParallaxComponent(props) {
             parallaxElement.current.style.top = `${newTop}px`;
             //this.refs.parallaxEffect.style.transform = `translate3d(0, ${newTop}px, 0)`;
     
-            console.log("top", top);
-            console.log("new top", newTop);
-    
       }
 
       window.addEventListener("scroll", handleScroll);

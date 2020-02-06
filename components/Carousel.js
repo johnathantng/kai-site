@@ -75,10 +75,8 @@ function Carousel(props) {
             <div className="carousel-container">
                     <div ref={carouselView} className="carousel-view"> 
                         <div className={`carousel-image ${fade}`} style={{ backgroundImage: `url(${carouselImage})` }}>
-                            
+                            <div className="opaque-overlay" />
                         </div>
-                    </div>
-                    <div className="center-container">
                         <div className="back-button" onClick={() => carouselBack()}>{"<"}</div>
                         <div className="carousel-legend"> {carouselLegend} </div>       
                         <div className="forward-button" onClick={() => carouselNext()}>{">"}</div>

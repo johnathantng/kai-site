@@ -6,11 +6,15 @@
 }
 
 .fade-in {
-	opacity: 0.5;
+	opacity: 1;
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 	animation-duration: 1s;
+}
+
+.carousel-view {
+	position: relative;
 }
 
 @keyframes fadeInOpacity {
@@ -18,22 +22,13 @@
 		opacity: 0;
 	}
 	100% {
-		opacity: 0.5;
+		opacity: 1;
 	}
-}
-
-.center-container {
-	position: absolute;
-	top: 100vh;
-	display: flex;
-	flex-direction: row;
-	width: 100vw;
-	justify-content: space-between;
-	align-items: center;
 }
 
 /** credit to w3schools **/
 .forward-button, .back-button {
+	position: absolute;
 	cursor: pointer;
 	width: auto;
 	padding: 10px 22px;
@@ -63,11 +58,19 @@
 }
 
 .carousel-image {
+	position: relative;
 	height: 30vw;
 	width: 100vw;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	.opaque-overlay {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background: $black;
+		opacity: 0.5;
+	}
 }
 
 .carousel-legend {
@@ -97,25 +100,13 @@
 }
 
 @media screen and (max-width: 1600px) {
-	.center-container {
-		top: 110vh;
-	}
 }
 
 @media screen and (max-width: $tablet) {
 	.carousel-image {
 		height: 50vw;
 	}
-	.center-container {
-		top: 75vh;
-	}
 }
 
 @media screen and (max-width: $mobile) {
-	.carousel-image {
-		height: 50vw;
-	}
-	.center-container {
-		top: 70vh;
-	}
 }

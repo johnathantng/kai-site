@@ -23,7 +23,7 @@ function ViewWindow() {
                     <div id="hero">
                         <Hero />
                     </div>
-                    <ParallaxComponent
+                    <ParallaxComponent                        
                         top="250%"
                         speed={1.2}
                         zIndex={2}

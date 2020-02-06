@@ -67,23 +67,25 @@ function Carousel(props) {
     }
 
     return (
-        <div className="carousel-container">
-            <div onClick={() => carouselBack()}>back</div>
-                <div ref={carouselView} className="carousel-view">     
-                    <div className="carousel-legend">
-                        {carouselLegend}
-                    </div>       
-                    <div className={`carousel-image ${fade}`}>
-                        {carouselImage}
+        <div className="carousel-wrapper">
+            <div className="carousel-container">
+                <div className="back-button" onClick={() => carouselBack()}>back</div>
+                    <div ref={carouselView} className="carousel-view">     
+                        <div className="carousel-legend">
+                            {carouselLegend}
+                        </div>       
+                        <div className={`carousel-image ${fade}`}>
+                            {carouselImage}
+                        </div>
                     </div>
+                <div className="forward-button" onClick={() => carouselNext()}>forward</div>
+                <div ref={carouselIndex} className="carousel-index">
+                    <span className="index-dot" onClick={() => handleIndexClick(0)}></span>
+                    <span className="index-dot" onClick={() => handleIndexClick(1)}></span>
+                    <span className="index-dot" onClick={() => handleIndexClick(2)}></span>
+                    <span className="index-dot" onClick={() => handleIndexClick(3)}></span>
+                    <span className="index-dot" onClick={() => handleIndexClick(4)}></span>
                 </div>
-            <div onClick={() => carouselNext()}>forward</div>
-            <div ref={carouselIndex} className="carousel-index">
-                <span className="index-dot" onClick={() => handleIndexClick(0)}></span>
-                <span className="index-dot" onClick={() => handleIndexClick(1)}></span>
-                <span className="index-dot" onClick={() => handleIndexClick(2)}></span>
-                <span className="index-dot" onClick={() => handleIndexClick(3)}></span>
-                <span className="index-dot" onClick={() => handleIndexClick(4)}></span>
             </div>
         </div>
     );

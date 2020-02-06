@@ -1,7 +1,6 @@
 import React, { useState, useEffect, StrictMode } from 'react';
 
 import ParallaxComponent from './ParallaxComponent';
-import Carousel from './Carousel';
 
 import sunImage from '../static/images/parallax-images/kai-website-sun.png';
 import slide1 from '../static/images/parallax-images/kai-slide-1.png';
@@ -10,7 +9,6 @@ import slide3 from '../static/images/parallax-images/kai-slide-3.png';
 import slide4 from '../static/images/parallax-images/kai-slide-4.png';
 import slide5 from '../static/images/parallax-images/kai-slide-5.png';
 import slide6 from '../static/images/parallax-images/kai-slide-6.png';
-import About from './About';
 
 function Hero() {
     return (

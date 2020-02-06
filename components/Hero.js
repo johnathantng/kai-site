@@ -14,6 +14,7 @@ function Hero() {
     return (
         <div>
             <div className="hero-container">
+                <span className="kai-name">Kai</span>
                 <ParallaxComponent
                     top={0}
                     speed={0}

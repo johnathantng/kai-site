@@ -29,6 +29,7 @@
 /** credit to w3schools **/
 .forward-button, .back-button {
 	position: absolute;
+	top: 50%;
 	cursor: pointer;
 	width: auto;
 	padding: 10px 22px;
@@ -42,6 +43,7 @@
 }
 
 .forward-button {
+	right: 0%;
 	border-radius: 3px 0 0 3px;
 }
 
@@ -74,7 +76,14 @@
 }
 
 .carousel-legend {
+	position: absolute;
+	width: 20vw;
+	top: 50%;
+	margin: auto;
+	left: 0;
+	right: 0;
 	font-family: HYPE;
+	text-align: center;
 	color: $white;
 	font-size: 42px;
 }
@@ -99,14 +108,19 @@
     background-color: #717171;
 }
 
-@media screen and (max-width: 1600px) {
-}
+
 
 @media screen and (max-width: $tablet) {
 	.carousel-image {
 		height: 50vw;
 	}
+	.carousel-legend, .forward-button, .back-button {
+		font-size: 20px;
+	}
 }
 
 @media screen and (max-width: $mobile) {
+	.carousel-legend {
+		font-size: 15px;
+	}
 }

@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 
+import GlideImage from '../static/images/glide-thumbnail.png';
+
 function Carousel(props) {
 
     const [count, setCount] = useState(0);
@@ -28,13 +30,13 @@ function Carousel(props) {
     }
 
     const carouselLegendIndex = [
-        "01. Infyonboard","02. Glide","03. LUNE","04. risd id rebrand", "05. YELORT"
+        "Glide","LUNE","RISD ID Rebrand","Coming Soon", "Coming Soon"
     ]
 
     const galleryImages = [
         // props.imageOne,
         // props.imageTwo
-        1,2,3,4,5
+        GlideImage,2,3,4,5
     ]
 
     const carouselBack = () => {
@@ -74,8 +76,7 @@ function Carousel(props) {
                         <div className="carousel-legend">
                             {carouselLegend}
                         </div>       
-                        <div className={`carousel-image ${fade}`}>
-                            {carouselImage}
+                        <div className={`carousel-image ${fade}`} style={{ backgroundImage: `url(${GlideImage})` }}>
                         </div>
                     </div>
                 <div className="forward-button" onClick={() => carouselNext()}>forward</div>

@@ -31,6 +31,7 @@
 	position: absolute;
 	top: 50%;
 	cursor: pointer;
+	margin-left: 60px;
 	width: auto;
 	padding: 10px 22px;
 	color: $white;
@@ -44,6 +45,7 @@
 
 .forward-button {
 	right: 0%;
+	margin-left: 0px;
 	border-radius: 3px 0 0 3px;
 }
 

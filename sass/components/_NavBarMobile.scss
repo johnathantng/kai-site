@@ -1,0 +1,32 @@
+.navbar-mobile-container {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100vw;
+    background: $white;
+    z-index: 20;
+    
+    .navbar-mobile-icons {
+        width: 50vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+        .social-media-icon {
+            height: 30px;
+            width: auto;
+            cursor: pointer;
+        }
+    }
+}
+
+.shadow {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+                0 2px 2px rgba(0,0,0,0.12), 
+                0 4px 4px rgba(0,0,0,0.12), 
+                0 8px 8px rgba(0,0,0,0.12),
+                0 16px 16px rgba(0,0,0,0.12);
+  }

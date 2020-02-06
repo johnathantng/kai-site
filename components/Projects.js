@@ -5,7 +5,7 @@ import Carousel from './Carousel';
 
 function Projects() {
     return (
-        <div className="landing-container">
+        <div className="projects-container">
             <Carousel />
         </div>
     );

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import NavBarDesktop from './NavBarDesktop';
 import NavBarMobile from './NavBarMobile';
@@ -15,9 +15,9 @@ function NavBar(props) {
 		window.addEventListener("resize", handleResize);
 
 		if (isMobile()) {
-      setNavBar(<NavBarMobile thumb={thumb} desc={desc}/>);
+      setNavBar(<NavBarMobile />);
     } else {
-      setNavBar(<NavBarDesktop thumb={thumb} desc={desc} />);
+      setNavBar(<NavBarDesktop />);
     }
 
     return () => window.removeEventListener("resize", handleResize);

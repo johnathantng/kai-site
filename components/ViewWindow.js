@@ -5,6 +5,7 @@ import Hero from '../components/Hero';
 import About from '../components/About';
 import Projects from '../components/Projects';
 import ParallaxComponent from './ParallaxComponent';
+import NavBar from './NavBar';
 
 function ViewWindow() {
 
@@ -20,6 +21,7 @@ function ViewWindow() {
         } else {
             return (
                 <div className="view-window">
+                    <NavBar />
                     <div id="hero">
                         <Hero />
                     </div>

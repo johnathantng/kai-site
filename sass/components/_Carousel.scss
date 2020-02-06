@@ -24,6 +24,8 @@
 }
 
 .center-container {
+	position: absolute;
+	top: 95vh;
 	display: flex;
 	flex-direction: row;
 	width: 100vw;
@@ -35,14 +37,18 @@
 .forward-button, .back-button {
 	cursor: pointer;
 	width: auto;
-	padding: 25px;
+	padding: 10px 22px;
 	color: $white;
 	font-weight: bold;
 	font-family: MrEaves;
 	font-size: 42px;
 	transition: 3s ease;
-	border-radius: 100px;
+	border-radius: 0 3px 3px 0;
 	user-select: none;
+}
+
+.forward-button {
+	border-radius: 3px 0 0 3px;
 }
 
 .forward-button:hover, .back-button:hover {
@@ -91,14 +97,26 @@
     background-color: #717171;
 }
 
+@media screen and (max-width: 1600px) {
+	.center-container {
+		top: 115vh;
+	}
+}
+
 @media screen and (max-width: $tablet) {
 	.carousel-image {
 		height: 50vw;
+	}
+	.center-container {
+		top: 75vh;
 	}
 }
 
 @media screen and (max-width: $mobile) {
 	.carousel-image {
 		height: 50vw;
+	}
+	.center-container {
+		top: 75vh;
 	}
 }

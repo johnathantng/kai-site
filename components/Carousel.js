@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 import GlideImage from '../static/images/glide-thumbnail.png';
+import LuneImage from '../static/images/lune-thumbnail.png';
+import risdIdRebrandImage from '../static/images/rebrand-id-thumbnail.png';
 
 function Carousel(props) {
 
@@ -36,7 +38,7 @@ function Carousel(props) {
     const galleryImages = [
         // props.imageOne,
         // props.imageTwo
-        GlideImage,2,3,4,5
+        GlideImage,LuneImage,risdIdRebrandImage,4,5
     ]
 
     const carouselBack = () => {
@@ -71,15 +73,16 @@ function Carousel(props) {
     return (
         <div className="carousel-wrapper">
             <div className="carousel-container">
-                <div className="back-button" onClick={() => carouselBack()}>back</div>
-                    <div ref={carouselView} className="carousel-view">     
-                        <div className="carousel-legend">
-                            {carouselLegend}
-                        </div>       
-                        <div className={`carousel-image ${fade}`} style={{ backgroundImage: `url(${GlideImage})` }}>
+                    <div ref={carouselView} className="carousel-view"> 
+                        <div className={`carousel-image ${fade}`} style={{ backgroundImage: `url(${carouselImage})` }}>
+                            
                         </div>
                     </div>
-                <div className="forward-button" onClick={() => carouselNext()}>forward</div>
+                    <div className="center-container">
+                        <div className="back-button" onClick={() => carouselBack()}>{"<"}</div>
+                        <div className="carousel-legend"> {carouselLegend} </div>       
+                        <div className="forward-button" onClick={() => carouselNext()}>{">"}</div>
+                    </div>
                 <div ref={carouselIndex} className="carousel-index">
                     <span className="index-dot" onClick={() => handleIndexClick(0)}></span>
                     <span className="index-dot" onClick={() => handleIndexClick(1)}></span>

@@ -27,6 +27,7 @@ function ViewWindow() {
                         top="250%"
                         speed={1.2}
                         zIndex={2}
+                        color="#171717"
                     >
                         <About />
                         <Projects />

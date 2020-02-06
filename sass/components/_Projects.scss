@@ -1,4 +1,37 @@
 .projects-container {
     height: 100vh;
     background: $black;
+
+    .projects-text-container {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+
+        .projects-text {
+            width: 30vw;
+            margin-left: 500px;
+            margin-top: 80px;
+            margin-bottom: 20px;
+            line-height: 60px;
+            text-align: right;
+            font-family: HYPE;
+            color: $red;
+            font-size: 42px;
+        }
+
+        @media screen and (max-width: $tablet) {
+            .projects-text {
+                font-size: 20px;
+                line-height: 35px;
+            }
+        }
+
+        @media screen and (max-width: $mobile) {
+            .projects-text {
+                width: 80vw;
+                font-size: 15px;
+                margin-left: 0px;
+            }
+        }
+    }
 }

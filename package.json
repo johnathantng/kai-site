@@ -11,7 +11,7 @@
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
-    "next": "^8.1.0",
+    "next": "^9.3.2",
     "next-images": "^1.1.2",
     "next-seo": "^1.12.0",
     "node-sass": "^4.12.0",

@@ -13,17 +13,19 @@
         animation-delay: 5s;
         animation-duration: 1s;
         opacity: 1;
+        position: relative;
+        height: 100%;
+        width: 100%;
 
 
         .landing-text {
             position: absolute;
-            right: 40vw;
             top: 50vh;
             width: 500px;
             height: 100px;
             color: $white;
             font-size: 50px;
-            margin-right: 180px;
+            margin-left: 25%;
             -webkit-animation: slide-up 0.5s forwards;
             -webkit-animation-delay: 1s;
             animation: slide-up 0.5s forwards;
@@ -46,9 +48,16 @@
             }
         }
 
-        @media screen and (max-width: 920px) {
+        @media screen and (max-width: 1200px) {
             .landing-text {
-                margin-right: 0px;
+                margin-left: 20%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .landing-text {
+                margin-left: 8%;
+                font-size: 40px;
             }
         }
         
